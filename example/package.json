@@ -1,0 +1,24 @@
+{
+  "name": "progress-react-native-example",
+  "description": "Example app for progress-react-native",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "progress-react-native": "^1.0.0",
+    "react": "16.11.0",
+    "react-native": "0.62.0",
+    "react-native-reanimated": "^1.8.0",
+    "react-native-svg": "^12.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/runtime": "^7.9.6",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "metro-react-native-babel-preset": "^0.59.0"
+  }
+}
