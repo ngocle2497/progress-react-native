@@ -1,5 +1,5 @@
 import React, { memo, useMemo } from 'react'
-import { ViewStyle, StyleProp, TextStyle } from 'react-native'
+import { ViewStyle, StyleProp, TextStyle, View,StyleSheet } from 'react-native'
 import isEqual from 'react-fast-compare'
 import Svg, { Circle } from 'react-native-svg'
 import Animated, { interpolate, multiply, concat, round } from 'react-native-reanimated'
@@ -10,6 +10,13 @@ import { ReText, toRad } from 'react-native-redash'
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle)
 const AnimatedSVG = Animated.createAnimatedComponent(Svg)
+
+const styles = StyleSheet.create({
+    container:{
+        justifyContent:'center',
+        alignItems:'center'
+    }
+});
 
 const CircleComponent = ({ progressAnim, progressSpin,
     textStyle: styleOverwrite,
@@ -31,13 +38,13 @@ const CircleComponent = ({ progressAnim, progressSpin,
     const svgStyle = [{ transform: [{ rotate: interpolate(progressSpin, { inputRange: [0, 1], outputRange: [toRad(0), Math.PI * 2] }) }] }] as StyleProp<ViewStyle>;
     const textStyle = useMemo(() => [{ position: 'absolute' }, styleOverwrite] as StyleProp<TextStyle>, [styleOverwrite])
     return (
-        <>
+        <View style={[styles.container]}>
             <AnimatedSVG width={(radius) * 2 + strokeWidth} height={(radius) * 2 + strokeWidth} style={svgStyle}>
                 <AnimatedCircle r={radius} x={radius + strokeWidth / 2} y={radius + strokeWidth / 2} stroke={bgStrokeColor} strokeWidth={strokeWidth} />
                 <AnimatedCircle strokeLinecap={isRadius ? 'round' : undefined} strokeDashoffset={strokeDashoffset} strokeDasharray={strokeDasharray} r={radius} x={radius + strokeWidth / 2} y={radius + strokeWidth / 2} stroke={strokeColor} strokeWidth={strokeWidth} />
             </AnimatedSVG>
             {showText && <ReText style={textStyle} text={concat(round(progressAnim), textConcat)} />}
-        </>
+        </View>
     )
 }
 

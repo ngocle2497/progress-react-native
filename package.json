@@ -1,6 +1,6 @@
 {
   "name": "progress-react-native",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Progress indicators and spinners for React Native using react native svg",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",

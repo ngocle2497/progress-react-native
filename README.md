@@ -2,9 +2,7 @@
 <h1>Progress Animated</h1>
 
 
-<img src="./preview/bar.gif">
-<img src="./preview/pie.gif">
-<img src="./preview/circle.gif">
+<img src="./preview/preview.gif">
 
 Progress indicator using reanimated and react native svg
 

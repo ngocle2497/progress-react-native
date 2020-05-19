@@ -8,7 +8,7 @@ export interface CircleProgressProps {
     radius?:number;
 
     /**
-     * width of stroke
+     * Width of stroke
      * @default 4
      */
     strokeWidth?:number;
@@ -32,7 +32,7 @@ export interface CircleProgressProps {
     isRadius?:boolean;
 
     /**
-     * Show number of progress or not
+     * Show current progress or not
      * @default false
      */
     showText?:boolean;
@@ -44,7 +44,7 @@ export interface CircleProgressProps {
     textConcat?:string;
 
     /**
-     * Text style for number of progress
+     * Text style for progress
      */
     textStyle?:StyleProp<TextStyle>
 }

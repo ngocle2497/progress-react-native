@@ -34,6 +34,7 @@ const BarComponent = ({ progressAnim, progressSpin, indeterminate,
         alignItems: 'center',
         backgroundColor: 'transparent',
         borderColor: borderColor,
+        overflow:'hidden'
     }] as StyleProp<ViewStyle>, [height, color, borderRadius, barWidth])
     const width = interpolate(progressAnim, { inputRange: [MIN_PROGRESS, MAX_PROGRESS], outputRange: [0, barWidth], extrapolate: Extrapolate.CLAMP })
     const progressStyle = [{

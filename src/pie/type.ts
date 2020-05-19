@@ -18,13 +18,13 @@ export interface PieProgressProps {
     bgColor?: string;
 
     /**
-     * width of stroke
+     * Width of stroke
      * @default 1
      */
     strokeWidth?:number;
 
-       /**
-     * Color stroke
+    /**
+     * Stroke color
      * @default '#0057e7'
      */
     strokeColor?:string;

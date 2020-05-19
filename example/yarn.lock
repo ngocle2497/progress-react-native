@@ -3508,10 +3508,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-progress-react-native@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/progress-react-native/-/progress-react-native-0.1.7.tgz#b80342c4d24f8cc6c3cd48042593a313f2ebdf61"
-  integrity sha512-84vsu1q0fKmY/JlddSi8VnRZ5e0NHitVN/Yt74fvCNpJLggmhF3wtzr4jDveNkGYk7SEmpnAdPek2tw9NNJRIw==
+progress-react-native@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/progress-react-native/-/progress-react-native-1.0.2.tgz#1d92a9ece8028d8949f69aeb6f0f42c5c7071125"
+  integrity sha512-1B0FVxiBNhfkoOsXonnrnaFtvXq6Ibipv1mUVPWiWngt797STiLuIBrrUKPIHe4d3Ql0Yvv80T1Mba/yIJa3rg==
   dependencies:
     react-fast-compare "3.1.1"
     react-native-redash "14.0.4"

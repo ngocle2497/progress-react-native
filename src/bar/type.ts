@@ -24,7 +24,7 @@ export interface BarProgressProps {
      */
     borderColor?:string;
     
-        /**
+    /**
      * Width of outer border, set to 0 to remove.
      * @default 1
      */
