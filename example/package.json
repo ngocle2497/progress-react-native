@@ -12,7 +12,7 @@
     "progress-react-native": "^1.0.0",
     "react": "16.11.0",
     "react-native": "0.62.0",
-    "react-native-reanimated": "^1.8.0",
+    "react-native-reanimated": "^2.10.0",
     "react-native-svg": "^12.1.0"
   },
   "devDependencies": {
